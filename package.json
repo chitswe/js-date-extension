@@ -1,0 +1,21 @@
+{
+  "name": "js-date-extension",
+  "version": "1.0.0",
+  "description": "Date extension functions.",
+  "main": "./dist/index.js",
+  "types":"./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:dist": "tsc -p tsconfig.prod.json",
+    "test":"ts-node example/index.ts"
+  },
+  "author": "Chit Swe Lin <chitswe.mdy@icloud.com> (https://www.facebook.com/chitswe.mdy)",
+  "license": "ISC",
+  "dependencies": {
+    "fecha": "^3.0.2",
+    "javascript-time-ago": "^2.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.4.3"
+  }
+}

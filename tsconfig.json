@@ -1,0 +1,14 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+      "outDir": "artifacts",
+      "paths": {
+        "*": [
+          "node_modules/*",
+          "lib/types*"
+        ]
+      }
+    },
+    "include": ["lib/**/*","example/**/*"]
+  }
+  
