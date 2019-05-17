@@ -4,6 +4,16 @@
   "description": "Date extension functions.",
   "main": "./dist/index.js",
   "types":"./dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chitswe/js-date-extension"
+  },
+  "keywords": [
+    "date",
+    "extension",
+    "javascript",
+    "node"
+  ],
   "scripts": {
     "build": "tsc",
     "build:dist": "tsc -p tsconfig.prod.json",

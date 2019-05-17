@@ -1,4 +1,4 @@
-import  fecha from "fecha";
+import fecha from "fecha";
 import javascript_time_ago from "javascript-time-ago";
 import DateUti from "./date-uti";
 import * as en from "javascript-time-ago/locale/en";
@@ -76,6 +76,7 @@ declare global {
     assumeLocalAsUTC(): Date;
     timeAgo(): string;
     uniqueNumber(): number;
+    format(format: string): FormData;
   }
 }
 
@@ -86,6 +87,10 @@ Date.prototype.dateOnly = function(): Date {
 
 Date.prototype.toDateOnlyJSON = function(): string {
   return fecha.format(this, "YYYY-MM-DD");
+};
+
+Date.prototype.format = function(format: string): string {
+  return fecha.format(this, format);
 };
 
 Date.prototype.startOfDay = function() {
