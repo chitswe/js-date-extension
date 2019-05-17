@@ -39,6 +39,9 @@ Date.prototype.dateOnly = function () {
 Date.prototype.toDateOnlyJSON = function () {
     return fecha_1.default.format(this, "YYYY-MM-DD");
 };
+Date.prototype.format = function (format) {
+    return fecha_1.default.format(this, format);
+};
 Date.prototype.startOfDay = function () {
     this.setHours(0);
     this.setMinutes(0);

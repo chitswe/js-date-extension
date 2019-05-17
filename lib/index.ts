@@ -76,7 +76,7 @@ declare global {
     assumeLocalAsUTC(): Date;
     timeAgo(): string;
     uniqueNumber(): number;
-    format(format: string): FormData;
+    format(format: string): string;
   }
 }
 
