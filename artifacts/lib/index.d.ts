@@ -46,6 +46,7 @@ declare global {
         assumeLocalAsUTC(): Date;
         timeAgo(): string;
         uniqueNumber(): number;
+        format(format: string): string;
     }
 }
 export { setPreference, DatePreference };

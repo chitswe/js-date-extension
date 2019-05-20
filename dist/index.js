@@ -4,7 +4,6 @@ var fecha = require("fecha");
 var javascript_time_ago_1 = require("javascript-time-ago");
 var date_uti_1 = require("./date-uti");
 var en = require("javascript-time-ago/locale/en");
-var FECHA = fecha;
 var Preference = {
     format: {
         date: {
@@ -38,10 +37,10 @@ Date.prototype.dateOnly = function () {
     return this;
 };
 Date.prototype.toDateOnlyJSON = function () {
-    return FECHA.format(this, "YYYY-MM-DD");
+    return fecha.format(this, "YYYY-MM-DD");
 };
 Date.prototype.format = function (format) {
-    return FECHA.format(this, format);
+    return fecha.format(this, format);
 };
 Date.prototype.startOfDay = function () {
     this.setHours(0);
@@ -172,19 +171,19 @@ Date.prototype.nextYear = function () {
     return this;
 };
 Date.prototype.formatAsShortDate = function () {
-    return FECHA.format(this, Preference.format.date.short);
+    return fecha.format(this, Preference.format.date.short);
 };
 Date.prototype.formatAsLongDate = function () {
-    return FECHA.format(this, Preference.format.date.long);
+    return fecha.format(this, Preference.format.date.long);
 };
 Date.prototype.formatAsShortTime = function () {
-    return FECHA.format(this, Preference.format.time.short);
+    return fecha.format(this, Preference.format.time.short);
 };
 Date.prototype.formatAsLongTime = function () {
-    return FECHA.format(this, Preference.format.time.long);
+    return fecha.format(this, Preference.format.time.long);
 };
 Date.prototype.toDateOnlyJSON = function () {
-    return FECHA.format(this, "YYYY-MM-DD");
+    return fecha.format(this, "YYYY-MM-DD");
 };
 Date.prototype.assumeUTCAsLocal = function () {
     return new Date(this.toJSON()

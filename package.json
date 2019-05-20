@@ -1,9 +1,9 @@
 {
   "name": "js-date-extension",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Date extension functions.",
   "main": "./dist/index.js",
-  "types":"./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chitswe/js-date-extension"
@@ -17,12 +17,12 @@
   "scripts": {
     "build": "tsc",
     "build:dist": "tsc -p tsconfig.prod.json",
-    "test":"ts-node example/index.ts"
+    "test": "ts-node example/index.ts"
   },
   "author": "Chit Swe Lin <chitswe.mdy@icloud.com> (https://www.facebook.com/chitswe.mdy)",
   "license": "ISC",
   "dependencies": {
-    "fecha": "^3.0.2",
+    "fecha": "^3.0.3",
     "javascript-time-ago": "^2.0.1"
   },
   "devDependencies": {
