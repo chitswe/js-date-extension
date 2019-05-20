@@ -1,4 +1,4 @@
-import   * as fecha from "fecha";
+import  * as fecha from "fecha";
 import javascript_time_ago from "javascript-time-ago";
 import DateUti from "./date-uti";
 import * as en from "javascript-time-ago/locale/en";

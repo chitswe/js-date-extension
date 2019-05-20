@@ -1,6 +1,6 @@
 {
   "name": "js-date-extension",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Date extension functions.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -22,7 +22,7 @@
   "author": "Chit Swe Lin <chitswe.mdy@icloud.com> (https://www.facebook.com/chitswe.mdy)",
   "license": "ISC",
   "dependencies": {
-    "fecha": "^3.0.3",
+    "fecha": "^2.3.3",
     "javascript-time-ago": "^2.0.1"
   },
   "devDependencies": {
